@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.taotao.tao_oat">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--服务注册-->
+
+        <service android:name=".base_assembly.MyIntentService"></service>
+
+
+        <!--广播的静态注册-->
+
+        <receiver android:name=".base_assembly.GostBroadcast"
+            android:exported="false">
+            <!--当 exported 为true时就可以跨进程的通讯了。-->
+            <intent-filter
+                android:priority="1000"><!--设定广播的优先级-->
+                <action android:name="com.taotao.tao_oat.broadcaset"/>
+            </intent-filter>
+
+
+        </receiver>
+        
+        <provider
+            android:authorities="com.taotao.tao_oat.provider"
+            android:name="com.taotao.tao_oat.base_assembly.MyContentProvider"
+            android:enabled="true"
+            android:exported="true">
+        </provider>
+    </application>
+
+</manifest>
