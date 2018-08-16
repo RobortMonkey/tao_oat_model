@@ -2,4 +2,8 @@
     <string name="app_name">Tao_oaT</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+
+
+    <string name="voice_remind_1">无法识别讲话内容，请重试。</string>
+    <string name="voice_remind_2">网络存在问题,请检查。</string>
 </resources>
