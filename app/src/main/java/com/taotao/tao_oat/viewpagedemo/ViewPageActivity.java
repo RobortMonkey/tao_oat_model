@@ -1,12 +1,13 @@
-package com.taotao.tao_oat;
+package com.taotao.tao_oat.viewpagedemo;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.widget.ImageView;
 
+import com.taotao.tao_oat.R;
+import com.taotao.tao_oat.utils;
 import com.taotao.tao_oat_library.weight.DirectionalViewPager;
 
 /**

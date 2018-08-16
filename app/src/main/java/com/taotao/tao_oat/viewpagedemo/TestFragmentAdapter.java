@@ -1,8 +1,10 @@
-package com.taotao.tao_oat;
+package com.taotao.tao_oat.viewpagedemo;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+
+import com.taotao.tao_oat.R;
 
 class TestFragmentAdapter extends FragmentPagerAdapter {
 	public static final int[] CONTENT = new int[] {

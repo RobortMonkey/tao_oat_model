@@ -9,6 +9,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.ImageView;
 
+import com.taotao.tao_oat.modle.ItemBean;
 import com.taotao.tao_oat_library.weight.DirectionalViewPager;
 
 import java.util.ArrayList;
@@ -23,7 +24,7 @@ public class MainActivity extends FragmentActivity {
     @BindView(R.id.recycleview)
     RecyclerView recycleview;
 
-    List<String> strList = new ArrayList<>();
+    List<ItemBean> strList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,11 +33,18 @@ public class MainActivity extends FragmentActivity {
         ButterKnife.bind(this);
 
 
+        strList.add(new ItemBean("ViewPage 垂直滑动", 0));
+        strList.add(new ItemBean("Android 四大组件", 1));
+        strList.add(new ItemBean("EventBus 使用", 2));
+        strList.add(new ItemBean("View 绘制", 3));
+        strList.add(new ItemBean("FFmpeg 处理", 4));
+
+
         recycleview.setItemAnimator(new DefaultItemAnimator());
         recycleview.setLayoutManager(new LinearLayoutManager(this));
         recycleview.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
 
-        RecycleViewAdapter adapter = new RecycleViewAdapter(strList);
+        RecycleViewAdapter adapter = new RecycleViewAdapter(strList,this);
         recycleview.setAdapter(adapter);
     }
 

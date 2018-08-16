@@ -1,4 +1,4 @@
-package com.taotao.tao_oat;
+package com.taotao.tao_oat.viewpagedemo;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -8,6 +8,8 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+
+import com.taotao.tao_oat.R;
 
 public class TestFragment extends Fragment {
 	private static final String KEY_CONTENT = "TestFragment:Content";
