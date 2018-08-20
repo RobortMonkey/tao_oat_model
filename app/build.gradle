@@ -42,5 +42,6 @@ dependencies {
     implementation 'org.greenrobot:eventbus:3.0.0'
     compile 'com.alibaba:fastjson:1.1.67.android'
     compile project(path: ':tao_oat_library')
+    implementation 'org.quanqi:mpandroidchart:1.7.5'
     implementation 'com.google.dagger:dagger:2.17'
 }
