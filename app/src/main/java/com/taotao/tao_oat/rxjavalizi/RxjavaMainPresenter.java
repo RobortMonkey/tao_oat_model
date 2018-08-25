@@ -45,7 +45,6 @@ public class RxjavaMainPresenter {
             }
         });
 
-
         //方式二  会自动调用next 方法  将会在 Observer的onNext()
 
         Observable<String> hello = Observable.just("hello");
@@ -218,7 +217,8 @@ public class RxjavaMainPresenter {
         };
 
         flowable.subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe(subscriber);
-
-
     }
+
+
+
 }

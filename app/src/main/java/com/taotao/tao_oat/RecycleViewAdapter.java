@@ -12,7 +12,6 @@ import android.widget.TextView;
 import com.taotao.tao_oat.eventbus.EventBusActivity;
 import com.taotao.tao_oat.fourcomponents.FourComponentsActivity;
 import com.taotao.tao_oat.modle.ItemBean;
-import com.taotao.tao_oat.viewpagedemo.ViewPageActivity;
 
 import java.util.List;
 
@@ -53,8 +52,8 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
                 Intent intent = new Intent();
                 switch (position) {
                     case 0:
-                        intent.setClass(view.getContext(), ViewPageActivity.class);
-                        activity.startActivity(intent);
+//                        intent.setClass(view.getContext(), ViewPageActivity.class);
+//                        activity.startActivity(intent);
                         break;
                     case 1:
                         intent.setClass(view.getContext(), FourComponentsActivity.class);

@@ -18,7 +18,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".viewpagedemo.ViewPageActivity"/>
+        <activity android:name=".VerticalViewpage.ViewPageActivity"/>
         <activity android:name=".fourcomponents.FourComponentsActivity"/>
         <activity android:name=".eventbus.EventBusActivity"/>
         <!--服务注册-->

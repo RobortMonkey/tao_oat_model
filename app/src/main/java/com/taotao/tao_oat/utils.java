@@ -2,6 +2,9 @@ package com.taotao.tao_oat;
 
 import android.util.DisplayMetrics;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by space on 2018/7/31 0031.
  */
