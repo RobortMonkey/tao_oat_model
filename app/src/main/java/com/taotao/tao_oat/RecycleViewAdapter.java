@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.taotao.tao_oat.VerticalViewpage.VerticalViewPagerActivity;
 import com.taotao.tao_oat.eventbus.EventBusActivity;
 import com.taotao.tao_oat.fourcomponents.FourComponentsActivity;
 import com.taotao.tao_oat.modle.ItemBean;
@@ -52,8 +53,8 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
                 Intent intent = new Intent();
                 switch (position) {
                     case 0:
-//                        intent.setClass(view.getContext(), ViewPageActivity.class);
-//                        activity.startActivity(intent);
+                        intent.setClass(view.getContext(), VerticalViewPagerActivity.class);
+                        activity.startActivity(intent);
                         break;
                     case 1:
                         intent.setClass(view.getContext(), FourComponentsActivity.class);

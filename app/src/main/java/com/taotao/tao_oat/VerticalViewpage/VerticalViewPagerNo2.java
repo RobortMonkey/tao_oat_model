@@ -14,12 +14,12 @@ import android.view.View;
  * @date 2018/8/25  下午5:32
  * @autor wangxiongfeng
  */
-public class VerticalViewPagerNO2 extends ViewPager {
-    public VerticalViewPagerNO2(@NonNull Context context) {
+public class VerticalViewPagerNo2 extends ViewPager {
+    public VerticalViewPagerNo2(@NonNull Context context) {
         super(context);
     }
 
-    public VerticalViewPagerNO2(@NonNull Context context, @Nullable AttributeSet attrs) {
+    public VerticalViewPagerNo2(@NonNull Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
     }
     private void init() {
