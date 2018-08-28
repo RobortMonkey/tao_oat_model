@@ -40,6 +40,7 @@ public class MainActivity extends FragmentActivity {
         strList.add(new ItemBean("FFmpeg 处理", 4));
         strList.add(new ItemBean("图片处理", 5));
         strList.add(new ItemBean("MPAndroidChart", 6));
+        strList.add(new ItemBean("商品详情页面构建", 7));
 
 
         recycleview.setItemAnimator(new DefaultItemAnimator());

@@ -13,6 +13,7 @@ import com.taotao.tao_oat.VerticalViewpage.VerticalViewPagerActivity;
 import com.taotao.tao_oat.eventbus.EventBusActivity;
 import com.taotao.tao_oat.fourcomponents.FourComponentsActivity;
 import com.taotao.tao_oat.modle.ItemBean;
+import com.taotao.tao_oat.productdetail.ProductDetailActivity;
 
 import java.util.List;
 
@@ -51,7 +52,7 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
             public void onClick(View view) {
 
                 Intent intent = new Intent();
-                switch (position) {
+                switch (list.get(position).getType()) {
                     case 0:
                         intent.setClass(view.getContext(), VerticalViewPagerActivity.class);
                         activity.startActivity(intent);
@@ -70,6 +71,11 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
 
 
                         break;
+
+                    case 7:
+                        intent.setClass(view.getContext(), ProductDetailActivity.class);
+                        activity.startActivity(intent);
+                        break;
                 }
 
 
@@ -80,7 +86,7 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
 
     @Override
     public int getItemCount() {
-        return list.size() - 1;
+        return list.size();
     }
 
     class MyViewHold extends RecyclerView.ViewHolder {
