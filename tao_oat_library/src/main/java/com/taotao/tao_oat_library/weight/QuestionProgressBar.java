@@ -1,4 +1,4 @@
-package com.taotao.tao_oat.wedget;
+package com.taotao.tao_oat_library.weight;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -132,6 +132,8 @@ public class QuestionProgressBar extends View implements Runnable {
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+
+//        setMeasuredDimension(widthMeasureSpec, heightMeasureSpec);
     }
 
     @Override

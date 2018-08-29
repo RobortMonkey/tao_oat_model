@@ -2,12 +2,11 @@ package com.taotao.tao_oat.eventbus;
 
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.Message;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 import com.taotao.tao_oat.R;
-import com.taotao.tao_oat_library.utils.MToast;
+import com.taotao.tao_oat_library.weight.MToast;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;

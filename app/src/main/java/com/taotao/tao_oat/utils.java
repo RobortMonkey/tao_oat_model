@@ -55,15 +55,5 @@ public class utils {
         return MyApplication.getInstance().getResources().getDimensionPixelSize(R.dimen.status_bar_height);
     }
 
-    /**
-     * 得到屏幕的高
-     *
-     * @return
-     */
-
-    public static int getScreenHeigh() {
-        DisplayMetrics dm = MyApplication.getInstance().getResources().getDisplayMetrics();
-        return dm.heightPixels;
-    }
 
 }

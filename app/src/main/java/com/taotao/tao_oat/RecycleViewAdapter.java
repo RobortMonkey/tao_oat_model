@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.taotao.tao_oat.DragLayout.DragLayoutActivity;
 import com.taotao.tao_oat.VerticalViewpage.VerticalViewPagerActivity;
 import com.taotao.tao_oat.eventbus.EventBusActivity;
 import com.taotao.tao_oat.fourcomponents.FourComponentsActivity;
@@ -74,6 +75,10 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
 
                     case 7:
                         intent.setClass(view.getContext(), ProductDetailActivity.class);
+                        activity.startActivity(intent);
+                        break;
+                    case 8:
+                        intent.setClass(view.getContext(), DragLayoutActivity.class);
                         activity.startActivity(intent);
                         break;
                 }

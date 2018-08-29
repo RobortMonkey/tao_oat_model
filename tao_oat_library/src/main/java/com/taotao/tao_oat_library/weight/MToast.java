@@ -1,4 +1,4 @@
-package com.taotao.tao_oat_library.utils;
+package com.taotao.tao_oat_library.weight;
 
 import android.content.Context;
 import android.view.Gravity;

@@ -22,6 +22,7 @@
         <activity android:name=".fourcomponents.FourComponentsActivity"/>
         <activity android:name=".eventbus.EventBusActivity"/>
         <activity android:name=".productdetail.ProductDetailActivity"/>
+        <activity android:name=".DragLayout.DragLayoutActivity"/>
         <!--服务注册-->
 
         <service android:name=".base_assembly.MyIntentService"></service>

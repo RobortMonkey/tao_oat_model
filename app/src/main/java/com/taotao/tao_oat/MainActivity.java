@@ -41,6 +41,7 @@ public class MainActivity extends FragmentActivity {
         strList.add(new ItemBean("图片处理", 5));
         strList.add(new ItemBean("MPAndroidChart", 6));
         strList.add(new ItemBean("商品详情页面构建", 7));
+        strList.add(new ItemBean("DragLayout", 8));
 
 
         recycleview.setItemAnimator(new DefaultItemAnimator());

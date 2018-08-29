@@ -1,9 +1,6 @@
 package com.taotao.tao_oat.wedget;
 
 import android.content.Context;
-import android.media.AudioFormat;
-import android.media.AudioManager;
-import android.media.AudioTrack;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.v7.widget.AppCompatButton;
@@ -25,7 +22,7 @@ import com.iflytek.cloud.SpeechRecognizer;
 import com.iflytek.cloud.SpeechSynthesizer;
 import com.iflytek.cloud.SpeechUtility;
 import com.taotao.tao_oat.R;
-import com.taotao.tao_oat_library.utils.MToast;
+import com.taotao.tao_oat_library.weight.MToast;
 
 
 /**
