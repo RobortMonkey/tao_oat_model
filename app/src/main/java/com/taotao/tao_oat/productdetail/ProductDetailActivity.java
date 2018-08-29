@@ -44,8 +44,8 @@ public class ProductDetailActivity extends AppCompatActivity {
         mViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-                if (position == imagerStr.length + 1) {
-                    if (positionOffset > 0.35) {
+                if (position == imagerStr.length - 1) {
+                    if (positionOffset > 0.25) {
                         mPagerAdapter.mMindText.setText("松开查看详情");
                         new Handler().postDelayed(new Runnable() {
                             @Override
@@ -53,8 +53,10 @@ public class ProductDetailActivity extends AppCompatActivity {
                                 mViewPager.setCurrentItem(imagerStr.length - 1);
                             }
                         }, 500);
-                    } else if (0.35 <= positionOffset && positionOffset < 0) {
-                        mViewPager.setCurrentItem(imagerStr.length - 1);
+                    } else {
+                        if (mPagerAdapter.mMindText != null)
+                            mPagerAdapter.mMindText.setText("继续拖动");
+
                     }
                 }
             }

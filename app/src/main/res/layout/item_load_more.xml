@@ -11,7 +11,7 @@
         android:layout_height="match_parent"
         android:layout_marginLeft="30dp"
         android:gravity="center"
-        android:text="松开差看详情"
+        android:text="继续拖动"
         android:textColor="#517db1"
         android:textSize="12sp"/>
 
