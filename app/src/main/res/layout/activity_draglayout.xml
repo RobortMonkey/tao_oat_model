@@ -4,7 +4,7 @@
               android:layout_height="match_parent"
               android:orientation="vertical">
 
-    <com.taotao.tao_oat_library.weight.DragLayout
+    <com.taotao.tao_oat_lib.weight.DragLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -20,6 +20,6 @@
             android:layout_height="100dp"
             android:background="@android:color/holo_blue_bright"/>
 
-    </com.taotao.tao_oat_library.weight.DragLayout>
+    </com.taotao.tao_oat_lib.weight.DragLayout>
 
 </LinearLayout>

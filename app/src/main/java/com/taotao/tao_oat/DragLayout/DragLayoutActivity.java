@@ -5,7 +5,6 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 import com.taotao.tao_oat.R;
-import com.taotao.tao_oat_library.base.BaseActivity;
 
 /**
  * @package com.taotao.tao_oat.DragLayout

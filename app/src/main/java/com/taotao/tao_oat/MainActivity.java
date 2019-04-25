@@ -7,10 +7,8 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.widget.ImageView;
 
 import com.taotao.tao_oat.modle.ItemBean;
-import com.taotao.tao_oat_library.weight.DirectionalViewPager;
 
 import java.util.ArrayList;
 import java.util.List;

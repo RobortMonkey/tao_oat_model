@@ -22,7 +22,7 @@ import com.iflytek.cloud.SpeechRecognizer;
 import com.iflytek.cloud.SpeechSynthesizer;
 import com.iflytek.cloud.SpeechUtility;
 import com.taotao.tao_oat.R;
-import com.taotao.tao_oat_library.weight.MToast;
+import com.taotao.tao_oat_lib.weight.MToast;
 
 
 /**
